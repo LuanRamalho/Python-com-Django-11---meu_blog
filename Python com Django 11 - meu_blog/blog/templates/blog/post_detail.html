@@ -9,7 +9,7 @@
 <body>
     <h1>{{ post.title }}</h1>
     <p>{{ post.content }}</p>
-    <p><em>{{ post.created_at }}</em></p>
+    <p><em>{{ post.created_at|date:"d/m/Y - H:i" }}</em></p>
 
     <h2>Mensagens</h2>
     <ul>
