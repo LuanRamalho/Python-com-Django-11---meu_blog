@@ -12,7 +12,7 @@
     <ul>
         {% for post in posts %}
             <li>
-                <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a> - {{ post.created_at }}
+                <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a> - {{ post.created_at|date:"d/m/Y - H:i" }}
             </li>
         {% endfor %}
     </ul>
